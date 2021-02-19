@@ -1,0 +1,29 @@
+<p>calculator works!</p>
+<div style="background-color:black;
+ width:40%; position: absolute;
+ left:30%; right:40%; height:400px">
+    <div *ngIf=" operator=='' && value1!==''">
+
+    <input type="text"  value="{{value1}}" (input)="setvalue1($event)" >
+    </div>
+    <div *ngIf="operator!='' && eq_opr!='='">
+
+    <input type="text" value={{value2}} (input)="setvalue2($event)">
+
+    </div>
+     <div *ngIf="eq_opr=='='">
+      <input type="text"  value={{sum}}>
+     </div>   
+    <div>
+        <button *ngFor="let i of ['1','2','3']" (click)="setvalue(i)">{{i}}</button></div>
+
+     <div><button *ngFor="let i of ['4','5','6']" (click)="setvalue(i)">{{i}}</button></div>
+
+        <button *ngFor="let i of ['7','8','9']" (click)="setvalue(i)">{{i}}</button>
+        <div>
+        <button *ngFor="let o of ['+','-','*','/','=']" (click)="setoperator(o)">{{o}}</button><br> 
+
+    </div>
+    </div>
+ 
+
