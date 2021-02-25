@@ -1,2 +1,15 @@
 <p>sample works!</p>
 {{data}}
+<p [ngStyle]="{'color':'red'}">welcome</p>
+
+<p [ngStyle]="check=='true'?style1:style2">Expertzlab</p>
+<p [ngClass]="'blueenabled'">welcome</p>
+<p [ngClass]="check=='ture'?'blueenabled':'bluedisabled'">Expertzlab</p>
+<!-- <select (change)="selectedColor=$event.target.value" >
+    <option value="yellow">yellow</option>
+    <option value="red">red</option>
+    <option value="blue">blue</option>
+    <p [ngClass]="'selectedColor'">welcome</p>
+    <div *ngFor="let color of colors">welcome</div>
+    </select> -->
+    

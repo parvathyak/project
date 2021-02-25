@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {faCalendar,faCoffee} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myproject';
+  calendar=faCalendar
+  coffee=faCoffee
+ 
 }

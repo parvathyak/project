@@ -1,0 +1,20 @@
+<p>nameeditor works!</p>
+<form action=""  class="form">
+    <div class="form">
+      <label for="name">Enter your name: </label>
+      <input type="text" [FormControl]="name" id="name">
+    </div><br>
+    <div class="form">
+      <label for="email">Enter your email: </label>
+      <input type="email" [FormControl]="email" id="email">
+    </div><br>
+    <div class="form">
+        <label for="password">Password:</label>
+        <input type="password" [FormControl]="password">
+    </div><br>
+    <div class="form">
+      <label for="phonenumber">Enter your phonenumber:</label>  
+      <input type="number" [FormControl]="phonenumber"> 
+    </div><br>
+<button (click)="save()">save</button>
+</form>

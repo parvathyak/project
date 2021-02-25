@@ -1,0 +1,14 @@
+.blueenabled{
+    color:blue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.bluedisabled{
+    color:firebrick;
+    font-size: 30px;
+}
+/* .selectedColor{
+    color:yellow;
+    color:red;
+    color:blue;
+} */
